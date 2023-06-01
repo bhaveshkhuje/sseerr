@@ -1,0 +1,27 @@
+<html>
+<head>
+	<title>Redirect to Another Website</title>
+</head>
+<body>
+	<form>
+		<input type="text" id="searchInput" placeholder="Search...">
+		<button type="button" onclick="search()">Go</button>
+	  </form>
+	  <script>function search() {
+		const input = document.getElementById("searchInput").value;
+		switch (input) {
+		  case "page1":
+			window.location.href = "https://bhaveshkhuje.github.io/trial/";
+			break;
+		  case "page2":
+			window.location.href = "C:\Users\BHAVESH\Documents\Nicepage Templates\Site1\index.html";
+			break;
+		  case "page3":
+			window.location.href = "page3.html";
+			break;
+		  default:
+			alert("Page not found");
+		}
+	  }</script>
+</body>
+</html>
